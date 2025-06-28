@@ -1,4 +1,4 @@
-package com.tesda-ciicc;
+package com.tesdaciicc;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
