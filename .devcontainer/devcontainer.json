@@ -32,7 +32,8 @@
 				"vscjava.vscode-java-dependency",
 				"alexcvzz.vscode-sqlite",
 				"esbenp.prettier-vscode",
-				"checkstyle.checkstyle"
+				"checkstyle.checkstyle",
+				"qwtel.sqlite-viewer"
 			]
 		}
 	},
