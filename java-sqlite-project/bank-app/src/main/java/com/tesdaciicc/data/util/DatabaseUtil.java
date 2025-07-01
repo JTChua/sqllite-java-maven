@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-public class DatabaseUtils {
+public class DatabaseUtil {
   private static final String URL = "jdbc:sqlite:banking-app.db";
   private static final Logger LOGGER = Logger.getLogger(DatabaseUtils.class.getName());
   private static final String exceptionFormat = "exception in %s, message: %s, code: %s";

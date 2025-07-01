@@ -1,4 +1,4 @@
-package com.tesdaciicc.data.entity;
+package com.tesdaciicc.data.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

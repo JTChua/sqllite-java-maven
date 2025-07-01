@@ -13,7 +13,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.logging.Logger;
 
-public class BankServiceDao implements DataAccessObject<BankService, UUID> {
+public class AccountDao implements DataAccessObject<BankService, UUID> {
 
   // Logger for logging SQL exceptions and other messages
   private static final Logger LOGGER = Logger.getLogger(BankServiceDao.class.getName());
