@@ -1,5 +1,5 @@
 package com.tesdaciicc.data.dao;
 
-public interface AccountDao {
+public interface TransactionDao {
 
 }
