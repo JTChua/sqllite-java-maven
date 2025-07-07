@@ -1,6 +1,5 @@
 package com.tesdaciicc.data.util;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -8,9 +7,16 @@ import java.sql.Statement;
 import java.util.logging.Logger;
 
 public class DatabaseUtil {
-  private static final String URL = "jdbc:sqlite:banking-app.db";
+  // private static final String URL = "jdbc:sqlite:banking-app.db";
+  private static final String URL;
   private static final Logger LOGGER = Logger.getLogger(DatabaseUtil.class.getName());
   private static final String EXCEPTION_FORMAT = "Exception in %s, message: %s, code: %s";
+
+  // alternative to URL = "jdbc:sqlite:banking-app.db"; for absolute path and full flexibility
+  static {
+    String currentDir = System.getProperty("user.dir"); // the directory JVM started from
+    URL = "jdbc:sqlite:" + currentDir + "/bank-app.db";
+  }
 
   private static Connection connection;
 
