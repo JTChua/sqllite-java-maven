@@ -1,9 +1,12 @@
 package com.tesdaciicc.data.model;
 
+import java.time.LocalDateTime; // if using Java 8+
+import java.math.BigDecimal;
+
 public class Account {
 
   private Long accountId; // corresponds to INTEGER PRIMARY KEY AUTOINCREMENT
-  private int userId; // INTEGER NOT NULL (FK to users table)
+  private Long userId; // INTEGER NOT NULL (FK to users table)
   private String accountNo; // TEXT NOT NULL UNIQUE
   private String accountType; // TEXT NOT NULL
   private BigDecimal balance; // REAL NOT NULL DEFAULT 0.00
@@ -20,11 +23,11 @@ public class Account {
     this.accountId = accountId;
   }
 
-  public int getUserId() {
+  public Long getUserId() {
     return userId;
   }
 
-  public void setUserId(int userId) {
+  public void setUserId(Long userId) {
     this.userId = userId;
   }
 
